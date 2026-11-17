@@ -85,9 +85,7 @@ table{display:block;overflow-x:auto}
 .tk-t span{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#d8d6d0;white-space:nowrap;padding:0 26px;display:flex;align-items:center;gap:52px}
 .tk-t span:after{content:"✦";color:#dcae51;font-size:15px}
 @keyframes tk{to{transform:translateX(-50%)}}
-.stk{position:absolute;left:max(40px,calc((100% - 1200px)/2));bottom:22px;transform:rotate(-5deg);background:linear-gradient(135deg,#d8a84e 0%,#f3d48b 50%,#b8862d 100%);color:#111E31;font-weight:800;font-size:15px;line-height:1.15;letter-spacing:-.01em;padding:12px 20px;border-radius:14px;border:2px solid #111E31;box-shadow:4px 4px 0 rgba(255,255,255,.25);display:flex;align-items:center;gap:10px;transition:transform .25s}
-.stk:hover{transform:rotate(-1deg) scale(1.04)}
-@media (max-width:980px){.stk{display:none}}
+.stk{display:inline-flex;align-items:center;gap:10px;padding:11px 20px;border-radius:999px;border:1.5px dashed rgba(243,212,139,.75);background:rgba(13,14,17,.6);color:#f3d48b;font-weight:700;font-size:15px;line-height:1.2;transition:transform .2s,background .2s}.stk:hover{background:rgba(243,212,139,.12);transform:translateY(-2px)}
 .wn{display:grid!important;grid-template-columns:1.25fr 1fr;gap:28px!important}
 .wn>article:first-child{grid-row:span 2}
 .wn>article:first-child h3{font-size:30px!important}

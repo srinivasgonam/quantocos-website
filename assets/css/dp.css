@@ -1,0 +1,32 @@
+/* Quantocos GC3 - design layer.
+   Fonts, colours, gradients and pictures: exactly as the original GC3 site.
+   Style: Design Pickle (pills, flat rounded cards, big stat numerals, ticker). Layout: ServiceNow. */
+:root{--gold-g:linear-gradient(135deg,#d8a84e 0%,#f3d48b 50%,#b8862d 100%);--text-g:linear-gradient(90deg,#eab308 0%,#ec4899 40%,#a855f7 72%,#38bdf8 100%);--void:#0d0e11;--void-2:#141519;--line:#25272d}
+/* accent words: Source Serif 4, upright, original text gradient */
+.gt,.gl{font-family:'Source Serif 4',Georgia,serif!important;font-style:normal!important;font-weight:500!important;background:var(--text-g)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important;padding-right:.04em!important;padding-bottom:.12em;display:inline-block}
+.gl{background:linear-gradient(90deg,#9a6f12 0%,#B30D73 50%,#752cff 100%)!important;-webkit-background-clip:text!important;background-clip:text!important}
+/* Design Pickle shapes: pill buttons, flat 20px cards, soft glow instead of hard offset shadows */
+.btn{border-radius:64px;padding:14px 30px;min-height:52px;font-weight:600}
+.btn-gold{box-shadow:0 0 28px rgba(216,168,78,.38)!important}
+.btn-gold:hover{transform:translateY(-2px)!important;box-shadow:0 0 38px rgba(243,212,139,.55)!important}
+.btn-ink{box-shadow:none!important}.btn-ink:hover{transform:translateY(-2px)!important;box-shadow:0 10px 24px rgba(17,30,49,.25)!important}
+.cl{border:1px solid #E3E7EE!important;border-radius:20px!important;box-shadow:none!important}
+.cl:hover{transform:translateY(-4px)!important;box-shadow:0 18px 40px -18px rgba(17,30,49,.28)!important}
+.cd{border-radius:20px!important}
+[style*="box-shadow:6px 6px 0"],[style*="box-shadow:8px 8px 0"],[style*="box-shadow:10px 10px 0"],[style*="box-shadow:3px 3px 0"],[style*="box-shadow:4px 4px 0"]{box-shadow:none!important}
+.pill{border-style:solid}
+/* ServiceNow layout: headline left, copy right, large rounded panel below */
+.hz-g{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:end;margin-top:26px}
+.hz-g h1{margin-top:0!important}
+.hz-panel{margin-top:60px;border-radius:28px;border:1px solid #2b2d34;padding:56px 24px;display:flex;justify-content:center;overflow:hidden;
+ background:linear-gradient(180deg,rgba(13,14,17,.55),rgba(13,14,17,.72)),url(../img/pin-colorful-ribbon-sculpture.webp) center/cover}
+.hz-panel>div{width:100%;max-width:560px}
+@media(max-width:900px){.hz-g{grid-template-columns:1fr;gap:28px}.hz-panel{padding:28px 12px;margin-top:40px}}
+/* Design Pickle stat blocks: big numerals */
+.st{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.st>div{background:#141519;border:1px solid #25272d;border-radius:20px;padding:40px 36px}
+.stn{font-weight:700;letter-spacing:-.035em;font-size:clamp(38px,4.6vw,68px);line-height:1;background:var(--gold-g);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.st p.eb{margin-top:18px;color:#a8a8ae}
+.st a{border-bottom:1.5px solid #dcae51;padding-bottom:1px;color:#f3d48b}
+@media(max-width:800px){.st{grid-template-columns:1fr}}
+.tk{border-color:#25272d!important}
